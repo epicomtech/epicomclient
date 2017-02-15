@@ -9,7 +9,7 @@ Install-Package Epicom.Client
 
 ## Credenciais de Acesso
 
-As credenciais devem ser fornecidas momento da inicialização do cliente
+As credenciais de acesso a API podem ser fornecidas momento da inicialização do cliente
    
     var client = new EpicomClient(chave, token);
 

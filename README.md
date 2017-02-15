@@ -1,5 +1,13 @@
 # epicomclient
-Cliente para a plataforma epicom
+Cliente C# para a plataforma epicom
+
+## Inicialização
+
+O cliente suporta que sejam fornecidas as credebciais da API no momento da inicialização
+    
+        var client = new EpicomClient(chave, token);
+
+ou no arquivo de configuração da aplicação
 
 ## Arquivo Web.config/App.config
 

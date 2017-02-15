@@ -1,5 +1,5 @@
 # epicomclient
-Cliente C# para a plataforma epicom
+Cliente c# para a plataforma epicom
 
 ## Credenciais de acesso
 

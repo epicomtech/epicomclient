@@ -3,7 +3,7 @@ Cliente c# para a plataforma epicom
 
 ## Credenciais de acesso
 
-As credenciais deven ser fornecidas momento da inicialização do cliente
+As credenciais devem ser fornecidas momento da inicialização do cliente
    
     var client = new EpicomClient(chave, token);
 

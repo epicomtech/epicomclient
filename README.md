@@ -1,7 +1,7 @@
 # EpicomClient
 EpicomClient implementa um cliente c# para integração via rest com a plataforma Epicom(http://www.epicom.com.br/). 
 
-[![NuGet version](https://badge.fury.io/nu/epicomclient.svg)](https://badge.fury.io/nu/epicomclient)
+[![NuGet version](https://badge.fury.io/nu/epicomclient.svg)](https://badge.fury.io/nu/Epicom.Client)
 
 ## Instalando via  Nuget
 

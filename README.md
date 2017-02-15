@@ -3,6 +3,7 @@ Cliente c# para a plataforma epicom
 
 ## Pacote Nuget
 
+Install-Package Epicom.Client
 https://www.nuget.org/packages/Epicom.Client/
 
 ## Credenciais de Acesso

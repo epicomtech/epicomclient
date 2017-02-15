@@ -1,9 +1,9 @@
 # epicomclient
 Cliente C# para a plataforma epicom
 
-## Inicialização
+## Credenciais de acesso
 
-O cliente suporta que sejam fornecidas as credebciais da API no momento da inicialização
+As credenciais deven ser fornecidas momento da inicialização do cliente
    
     var client = new EpicomClient(chave, token);
 

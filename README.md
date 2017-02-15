@@ -1,7 +1,11 @@
 # epicomclient
 Cliente c# para a plataforma epicom
 
-## Credenciais de acesso
+## Pacote Nuget
+
+https://www.nuget.org/packages/Epicom.Client/
+
+## Credenciais de Acesso
 
 As credenciais devem ser fornecidas momento da inicialização do cliente
    

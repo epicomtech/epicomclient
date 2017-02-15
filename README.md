@@ -1,7 +1,9 @@
-# epicomclient
-Cliente c# para a plataforma epicom
+# EpicomClient
+EpicomClient implementa um cliente c# para integração via rest com a plataforma Epicom(http://www.epicom.com.br/). 
 
-## Pacote Nuget
+[![NuGet version](https://badge.fury.io/nu/polly.svg)](https://badge.fury.io/nu/polly)
+
+## Instalando via  Nuget
 
 Install-Package Epicom.Client
 

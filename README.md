@@ -9,6 +9,8 @@ O cliente suporta que sejam fornecidas as credebciais da API no momento da inici
 
 ou no arquivo de configuração da aplicação
 
+               var client = new EpicomClient();
+
 ## Arquivo Web.config/App.config
 
 Adicionar as seguintes chaves à seção *appSettings*:

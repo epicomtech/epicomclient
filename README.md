@@ -4,12 +4,12 @@ Cliente C# para a plataforma epicom
 ## Inicialização
 
 O cliente suporta que sejam fornecidas as credebciais da API no momento da inicialização
-    
-        var client = new EpicomClient(chave, token);
+   
+    var client = new EpicomClient(chave, token);
 
 ou no arquivo de configuração da aplicação
 
-               var client = new EpicomClient();
+    var client = new EpicomClient();
 
 ## Arquivo Web.config/App.config
 

@@ -27,4 +27,10 @@ Adicionar as seguintes chaves à seção *appSettings*:
       <add key="Epicom.Api.Token" value="<Token de acesso a API>" />
       ...
     </appSettings>
+    
+## Política de retentativas
+
+Caso o cliente receba uma resposta com status code maior que 500 o cliente suporta que seja configurado número de retentaivas a serem feitas para API.
+
+   var client = new EpicomClient(chave, token, new RetryPolicyConfig { RetryCount = 5 });
 

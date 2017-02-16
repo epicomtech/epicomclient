@@ -8,6 +8,8 @@ Este pacote consiste em uma implementação de um cliente c# para integração v
 ## Instalando via  Nuget
 
 Install-Package Epicom.Client
+
+
 https://www.nuget.org/packages/Epicom.Client
 
 ## Credenciais de Acesso

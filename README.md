@@ -32,7 +32,7 @@ Adicionar as seguintes chaves à seção *appSettings*:
     
 ## Política de Retentativas
 
-Caso o cliente receba uma resposta com status code maior que ou igual a 500 é possível se configurar o número de retentativas a serem feitas para API
+Caso o cliente receba uma resposta com status code maior que ou igual a 500 é possível se configurar o número de retentativas a serem feitas para a API
 
       var client = new EpicomClient(chave, token, new RetryPolicyConfig { RetryCount = 5 });
 

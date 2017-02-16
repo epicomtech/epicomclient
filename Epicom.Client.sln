@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Epicom.Client", "Epicom.Cli
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Epicom.HttpClient.Tests", "Epicom.HttpClient.Tests\Epicom.HttpClient.Tests.csproj", "{53980E9E-AA0E-4574-B627-D4C4F28CADDD}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{2E167FAA-1552-4A88-8491-CB5E43B6AAF1}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{8D7B795B-C575-4977-BB18-44995CF8571F}"
 	ProjectSection(SolutionItems) = preProject
 		.nuget\NuGet.Config = .nuget\NuGet.Config
 		.nuget\NuGet.exe = .nuget\NuGet.exe

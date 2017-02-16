@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>Epicom.Client</id>
+    <version>$version$</version>
+    <title>Epicom.Client</title>
+    <authors>Epicom Marketplace Hub</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Contém classes para integração com a api Epicom</description>
+    <copyright>Copyright 2015,2016,2017 Epicom Technology</copyright>
+    <references>
+      <reference file="Epicom.Client.dll"/>
+      <reference file="Epicom.Http.Client.dll"/>
+    </references>
+  </metadata>
+  <files>
+    <file src="bin\$configuration$\Epicom.Client.dll" target="lib\net451" />
+    <file src="bin\$configuration$\Epicom.Client.pdb" target="lib\net451" />
+    <file src="bin\$configuration$\Epicom.Http.Client.dll" target="lib\net451" />
+    <file src="bin\$configuration$\Epicom.Http.Client.pdb" target="lib\net451" />
+  </files>
+</package>

@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7B4C5AC5-6825-4CCB-9B87-C103636C39B0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Epicom.Client</RootNamespace>
+    <AssemblyName>Epicom.Client</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>5</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EasyAsyncEnumerable, Version=0.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\EasyAsyncEnumerable.0.1.0.0\lib\net45\EasyAsyncEnumerable.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EpicomClient.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\Fornecedor\CategoriaAtributoMapeamentoPutRequest.cs" />
+    <Compile Include="Resources\Fornecedor\CategoriaGetAllRequest.cs" />
+    <Compile Include="Resources\Fornecedor\CategoriaGetRequest.cs" />
+    <Compile Include="Resources\Fornecedor\CategoriaGetResponse.cs" />
+    <Compile Include="Resources\Fornecedor\CategoriaPatchRequest .cs" />
+    <Compile Include="Resources\Fornecedor\CategoriaPostRequest.cs" />
+    <Compile Include="Resources\Fornecedor\DisponibilidadeGetAllRequest.cs" />
+    <Compile Include="Resources\Fornecedor\DisponibilidadeGetRequest.cs" />
+    <Compile Include="Resources\Fornecedor\DisponibilidadeGetResponse.cs" />
+    <Compile Include="Resources\Fornecedor\DisponibilidadePatchRequest.cs" />
+    <Compile Include="Resources\Fornecedor\DisponibilidadePostRequest.cs" />
+    <Compile Include="Resources\Fornecedor\ImagemPatchRequest.cs" />
+    <Compile Include="Resources\Fornecedor\MapeamentoSkuGetRequest.cs" />
+    <Compile Include="Resources\Fornecedor\MapeamentoSkuGetResponse.cs" />
+    <Compile Include="Resources\Fornecedor\MapeamentoSkuPutRequest.cs" />
+    <Compile Include="Resources\Fornecedor\MarcaGetAllRequest.cs" />
+    <Compile Include="Resources\Fornecedor\MarcaGetRequest.cs" />
+    <Compile Include="Resources\Fornecedor\MarcaGetResponse.cs" />
+    <Compile Include="Resources\Fornecedor\MarcaPostRequest.cs" />
+    <Compile Include="Resources\Fornecedor\PedidoEntregaEventoGetRequest.cs" />
+    <Compile Include="Resources\Fornecedor\PedidoEntregaEventoGetResponse.cs" />
+    <Compile Include="Resources\Fornecedor\PedidoEntregaEventoPostRequest.cs" />
+    <Compile Include="Resources\Fornecedor\PedidoEntregaGetRequest.cs" />
+    <Compile Include="Resources\Fornecedor\PedidoEntregaGetResponse.cs" />
+    <Compile Include="Resources\Fornecedor\PedidoEntregaPatchRequest.cs" />
+    <Compile Include="Resources\Fornecedor\PedidoEntregaPostRequest.cs" />
+    <Compile Include="Resources\Fornecedor\PedidoGetListRequest.cs" />
+    <Compile Include="Resources\Fornecedor\PedidoGetListResponse.cs" />
+    <Compile Include="Resources\Fornecedor\PedidoGetRequest.cs" />
+    <Compile Include="Resources\Fornecedor\ProdutoGetAllRequest.cs" />
+    <Compile Include="Resources\Fornecedor\ProdutoPatchRequest.cs" />
+    <Compile Include="Resources\Fornecedor\SkuDeleteRequest.cs" />
+    <Compile Include="Resources\Fornecedor\SkuGetPorProdutoRequest.cs" />
+    <Compile Include="Resources\Fornecedor\SkuGetAllRequest.cs" />
+    <Compile Include="Resources\Marketplace\AtributoCategoriaPutRequest.cs" />
+    <Compile Include="Resources\Marketplace\CalculoCarrinhoEntregaUnicaPostRequest.cs" />
+    <Compile Include="Resources\Marketplace\CalculoCarrinhoPostRequest.cs" />
+    <Compile Include="Resources\Marketplace\CalculoCarrinhoEntregaUnicaPostResponse.cs" />
+    <Compile Include="Resources\Marketplace\CalculoCarrinhoPostResponse.cs" />
+    <Compile Include="Resources\Marketplace\CategoriaAtributoDeleteRequest.cs" />
+    <Compile Include="Resources\Marketplace\CategoriaAtributoGetRequest.cs" />
+    <Compile Include="Resources\Marketplace\CategoriaAtributoGetResponse.cs" />
+    <Compile Include="Resources\Marketplace\CategoriaAtributoPutRequest.cs" />
+    <Compile Include="Resources\Marketplace\CategoriaGetRequest.cs" />
+    <Compile Include="Resources\Marketplace\CategoriaPatchRequest.cs" />
+    <Compile Include="Resources\Marketplace\FornecedorCategoriaGetRequest.cs" />
+    <Compile Include="Resources\Marketplace\FornecedorCategoriaGetResponse.cs" />
+    <Compile Include="Resources\Marketplace\GrupoGetResponse.cs" />
+    <Compile Include="Resources\Marketplace\OfertaPostRequest.cs" />
+    <Compile Include="Resources\Marketplace\OfertaByIdPutRequest.cs" />
+    <Compile Include="Resources\Marketplace\OfertaPutRequest.cs" />
+    <Compile Include="Resources\Marketplace\PedidoEntregaEventoPostRequest.cs" />
+    <Compile Include="Resources\Marketplace\PedidoEntregaPutRequest.cs" />
+    <Compile Include="Resources\Marketplace\PedidoGetResponse.cs" />
+    <Compile Include="Resources\Marketplace\PedidoGetRequest.cs" />
+    <Compile Include="Resources\Marketplace\FornecedorGetRequest.cs" />
+    <Compile Include="Resources\Marketplace\FornecedorGetResponse.cs" />
+    <Compile Include="Resources\Fornecedor\PedidoPatchRequest.cs" />
+    <Compile Include="Resources\Fornecedor\ProdutoGetRequest.cs" />
+    <Compile Include="Resources\Fornecedor\ProdutoGetResponse.cs" />
+    <Compile Include="Resources\Fornecedor\ProdutoPostRequest.cs" />
+    <Compile Include="Resources\Fornecedor\SkuGetRequest.cs" />
+    <Compile Include="Resources\Fornecedor\SkuGetResponse.cs" />
+    <Compile Include="Resources\Fornecedor\SkuPatchRequest.cs" />
+    <Compile Include="Resources\Fornecedor\SkuPostRequest.cs" />
+    <Compile Include="Resources\Marketplace\CategoriaGetCodesRequest.cs" />
+    <Compile Include="Resources\Marketplace\CategoriaGetResponse.cs" />
+    <Compile Include="Resources\Marketplace\CategoriaPostRequest.cs" />
+    <Compile Include="Resources\Marketplace\DimensoesGetResponse.cs" />
+    <Compile Include="Resources\Fornecedor\PedidoGetResponse.cs" />
+    <Compile Include="Resources\Marketplace\PedidoEntregaGetRequest.cs" />
+    <Compile Include="Resources\Marketplace\PedidoEntregaGetResponse.cs" />
+    <Compile Include="Resources\Marketplace\PedidoGetListRequest.cs" />
+    <Compile Include="Resources\Marketplace\PedidoGetListResponse.cs" />
+    <Compile Include="Resources\Marketplace\PedidoPatchRequest.cs" />
+    <Compile Include="Resources\Marketplace\PedidoPostRequest.cs" />
+    <Compile Include="Resources\Marketplace\PedidoPostResponse.cs" />
+    <Compile Include="Resources\Marketplace\ProdutoGetResponse.cs" />
+    <Compile Include="Resources\Marketplace\ProdutoGetRequest.cs" />
+    <Compile Include="Resources\Marketplace\SkuGetAllRequest.cs" />
+    <Compile Include="Resources\Marketplace\SkuGetRequest.cs" />
+    <Compile Include="Resources\Marketplace\SkuGetResponse.cs" />
+    <Compile Include="Resources\Marketplace\PedidoEntregaEventoGetRequest.cs" />
+    <Compile Include="Resources\Marketplace\PedidoEntregaEventoGetResponse.cs" />
+    <Compile Include="Resources\Shared\CategoriaPatchRequest.cs" />
+    <Compile Include="Resources\Shared\DimensoesRequest.cs" />
+    <Compile Include="Resources\Fornecedor\GrupoGetResponse.cs" />
+    <Compile Include="Resources\Shared\GrupoPatchRequest.cs" />
+    <Compile Include="Resources\Shared\GrupoPostRequest.cs" />
+    <Compile Include="Resources\Shared\ImagemGetResponse.cs" />
+    <Compile Include="Resources\Shared\ImagemPostRequest.cs" />
+    <Compile Include="Resources\Shared\MapeamentoCategoriaGetRequest.cs" />
+    <Compile Include="Resources\Shared\MapeamentoCategoriaGetResponse.cs" />
+    <Compile Include="Resources\Shared\MapeamentoCategoriaPutRequest.cs" />
+    <Compile Include="Resources\Shared\PagedRequest.cs" />
+    <Compile Include="Resources\Shared\PedidoDestinatario.cs" />
+    <Compile Include="Resources\Shared\PedidoEndereco.cs" />
+    <Compile Include="Resources\Shared\PedidoStatusEnum.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Epicom.HttpClient\Epicom.Http.Client.csproj">
+      <Project>{01685756-50cc-44f4-ae56-41dc2b025b76}</Project>
+      <Name>Epicom.Http.Client</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Epicom.Client.nuspec" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

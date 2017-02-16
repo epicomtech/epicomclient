@@ -1,0 +1,46 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Make">
+  <PropertyGroup>
+    <SourceDir>$(MSBuildProjectDirectory)</SourceDir> 
+    <Configuration>Release</Configuration>
+    <Platform>Any CPU</Platform>
+    <BuildProperties>Configuration=$(Configuration);Platform=$(Platform)</BuildProperties>
+    <ExcludeXmlAssemblyFiles>false</ExcludeXmlAssemblyFiles>
+    <BuildTools>$(SourceDir)\buildtools</BuildTools>
+  </PropertyGroup>
+  
+  <UsingTask
+    AssemblyFile="$(BuildTools)\xunit\xunit.runner.msbuild.dll"
+    TaskName="Xunit.Runner.MSBuild.xunit" />
+  
+  <ItemGroup>
+    <SolutionFile
+        Include="$(SourceDir)\Epicom.Client.sln" />
+  </ItemGroup>
+  <ItemGroup>
+    <TestAssemblies Include="**\bin\$(Configuration)\*.tests.dll" />
+  </ItemGroup> 
+  
+  <Target Name="Clean">
+    <ItemGroup>
+        <BuildFiles
+            Include="$(SourceDir)\**\bin\$(Configuration)\**\*;$(SourceDir)\**\obj\$(Configuration)\**\*" />
+    </ItemGroup>
+    <RemoveDir
+        Directories="%(BuildFiles.RootDir)%(BuildFiles.Directory)" />
+  </Target>
+
+  <Target Name="Build">
+    <MSBuild
+        Projects="@(SolutionFile)"
+        Properties="$(BuildProperties)" />
+  </Target>
+  
+  <Target Name="Test">
+    <xunit Assemblies="@(TestAssemblies)" xml="..\TestResults.xml" />
+  </Target>
+  
+  <Target Name="Make">
+    <CallTarget
+        Targets="Clean;Build;Test" />
+  </Target>
+</Project>

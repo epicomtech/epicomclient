@@ -9,6 +9,9 @@ Este pacote consiste em uma implementação de um cliente c# para integração v
 
 Install-Package Epicom.Client
 
+
+https://www.nuget.org/packages/Epicom.Client
+
 ## Credenciais de Acesso
 
 As credenciais de acesso a API podem ser fornecidas no momento da inicialização do cliente

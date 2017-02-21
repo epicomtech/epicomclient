@@ -9,7 +9,6 @@ namespace Epicom.Client.Resources.Marketplace
     public class PedidoEntregaGetListEventosRequest : IResponse<IEnumerable<PedidoEntregaEventoGetResponse>>
     {
         public long IdPedido { get; set; }
-        public int IdEntrega { get; set; }
-        public int IdEvento { get; set; }
+        public int IdEntrega { get; set; }        
     }
 }

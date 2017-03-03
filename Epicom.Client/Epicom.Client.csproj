@@ -137,7 +137,9 @@
     <Compile Include="Resources\Marketplace\ProdutoGetResponse.cs" />
     <Compile Include="Resources\Marketplace\ProdutoGetRequest.cs" />
     <Compile Include="Resources\Marketplace\SkuGetAllRequest.cs" />
+    <Compile Include="Resources\Marketplace\DisponibilidadeGetRequest.cs" />
     <Compile Include="Resources\Marketplace\SkuGetRequest.cs" />
+    <Compile Include="Resources\Marketplace\DisponibilidadeGetResponse.cs" />
     <Compile Include="Resources\Marketplace\SkuGetResponse.cs" />
     <Compile Include="Resources\Marketplace\PedidoEntregaEventoGetRequest.cs" />
     <Compile Include="Resources\Marketplace\PedidoEntregaEventoGetResponse.cs" />

@@ -10,10 +10,11 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Epicom.HttpClient.Tests</RootNamespace>
     <AssemblyName>Epicom.HttpClient.Tests</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -38,7 +39,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Epicom.Client, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Epicom.Client.1.229.0\lib\net451\Epicom.Client.dll</HintPath>
+      <HintPath>..\packages\Epicom.Client.1.234.0\lib\net451\Epicom.Client.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Epicom.Diagnostics, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -46,7 +47,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Epicom.Http.Client, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Epicom.Client.1.229.0\lib\net451\Epicom.Http.Client.dll</HintPath>
+      <HintPath>..\packages\Epicom.Client.1.234.0\lib\net451\Epicom.Http.Client.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
@@ -104,8 +105,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="app.config" />
-    <None Include="packages.config" />
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />

@@ -45,12 +45,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Epicom.Client, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Epicom.Client.1.239.0\lib\net451\Epicom.Client.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Epicom.Diagnostics, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Epicom.Diagnostics.1.53.0\lib\net451\Epicom.Diagnostics.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Epicom.Http.Client, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Epicom.Client.1.237.0\lib\net451\Epicom.Http.Client.dll</HintPath>
+      <HintPath>..\packages\Epicom.Client.1.239.0\lib\net451\Epicom.Http.Client.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
@@ -269,12 +273,6 @@
     </Content>
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Epicom.Client\Epicom.Client.csproj">
-      <Project>{7b4c5ac5-6825-4ccb-9b87-c103636c39b0}</Project>
-      <Name>Epicom.Client</Name>
-    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

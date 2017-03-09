@@ -150,6 +150,7 @@
     <Compile Include="Resources\Fornecedor\GrupoGetResponse.cs" />
     <Compile Include="Resources\Shared\GrupoPatchRequest.cs" />
     <Compile Include="Resources\Shared\GrupoPostRequest.cs" />
+    <Compile Include="Resources\Shared\VersionGetRequest.cs" />
     <Compile Include="Resources\Shared\ImagemGetResponse.cs" />
     <Compile Include="Resources\Shared\ImagemPostRequest.cs" />
     <Compile Include="Resources\Shared\MapeamentoCategoriaGetRequest.cs" />

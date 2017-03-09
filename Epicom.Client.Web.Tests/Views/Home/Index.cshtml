@@ -1,0 +1,33 @@
+﻿@{
+	ViewBag.Title = "Home Page";
+}
+
+@using (Html.BeginForm("Test", "Home", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+{
+	<h3>@ViewBag.Message</h3>
+	<hr />
+	@Html.ValidationSummary("", new { @class = "text-danger" })
+	<div class="form-group">
+		<label class="col-md-2 control-label">Url:</label>
+		<div class="col-md-10">
+			<input type="text" class="form-control" name="url" />
+		</div>
+	</div>
+	<div class="form-group">
+		<label class="col-md-2 control-label">Key:</label>
+		<div class="col-md-10">
+			<input type="text" class="form-control" name="key" />
+		</div>
+	</div>
+	<div class="form-group">
+		<label class="col-md-2 control-label">Secret:</label>
+		<div class="col-md-10">
+			<input type="text" class="form-control" name="secret" />
+		</div>
+	</div>
+	<div class="form-group">
+		<div class="col-md-offset-2 col-md-10">
+			<input type="submit" class="btn btn-default" value="Test" />
+		</div>
+	</div>
+}

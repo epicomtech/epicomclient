@@ -1,29 +1,29 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
-	<metadata>
-		<id>Epicom.Client</id>
-		<version>$version$</version>
-		<title>Epicom.Client</title>
-		<authors>Epicom Marketplace Hub</authors>
-		<requireLicenseAcceptance>false</requireLicenseAcceptance>
-		<description>Contém classes para integração com a api Epicom</description>
-		<copyright>Copyright 2015,2016,2017 Epicom Technology</copyright>
-			<dependencies>
-					<dependency id="Epicom.Diagnostics" version="1.56.0" targetFramework="net451" />
-					<dependency id="Microsoft.AspNet.WebApi.Client" version="5.2.3" targetFramework="net451" />
-					<dependency id="Newtonsoft.Json" version="9.0.1" targetFramework="net451" />
-					<dependency id="Polly" version="2.2.7" targetFramework="net451" />
-					<dependency id="System.Collections.Immutable" version="1.1.36" targetFramework="net451" />
-			</dependencies>
-			<references>
-			<reference file="Epicom.Client.dll"/>
-			<reference file="Epicom.Http.Client.dll"/>
-		</references>
-	</metadata>
-	<files>
-		<file src="bin\$configuration$\Epicom.Client.dll" target="lib\net451" />
-		<file src="bin\$configuration$\Epicom.Client.pdb" target="lib\net451" />
-		<file src="bin\$configuration$\Epicom.Http.Client.dll" target="lib\net451" />
-		<file src="bin\$configuration$\Epicom.Http.Client.pdb" target="lib\net451" />
-	</files>
+		<metadata>
+				<id>Epicom.Client</id>
+				<version>$version$</version>
+				<title>Epicom.Client</title>
+				<authors>Epicom Marketplace Hub</authors>
+				<requireLicenseAcceptance>false</requireLicenseAcceptance>
+				<description>Contém classes para integração com a api Epicom</description>
+				<copyright>Copyright 2015,2016,2017 Epicom Technology</copyright>
+				<dependencies>
+						<dependency id="Epicom.Diagnostics" version="1.56.0" />
+						<dependency id="Microsoft.AspNet.WebApi.Client" version="5.2.3" />
+						<dependency id="Newtonsoft.Json" version="9.0.1" />
+						<dependency id="Polly" version="2.2.7" />
+						<dependency id="System.Collections.Immutable" version="1.1.36" />
+				</dependencies>
+				<references>
+						<reference file="Epicom.Client.dll"/>
+						<reference file="Epicom.Http.Client.dll"/>
+				</references>
+		</metadata>
+		<files>
+				<file src="bin\$configuration$\Epicom.Client.dll" target="lib\net451" />
+				<file src="bin\$configuration$\Epicom.Client.pdb" target="lib\net451" />
+				<file src="bin\$configuration$\Epicom.Http.Client.dll" target="lib\net451" />
+				<file src="bin\$configuration$\Epicom.Http.Client.pdb" target="lib\net451" />
+		</files>
 </package>

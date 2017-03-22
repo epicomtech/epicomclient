@@ -10,62 +10,62 @@ using Xunit;
 
 namespace Epicom.Http.Client.Tests.HttpClientTests
 {
-    public class PostTests : BaseApiTest
-    {
-        private FakeApiClient sut;
+	public class PostTests : BaseApiTest
+	{
+		private FakeApiClient sut;
 
-        [Fact]
-        public void Retorna_Null_Para_EmptyResponse()
-        {
-            //Arrange
-            BuildSut(response: null);
+		[Fact]
+		public void Retorna_Null_Para_EmptyResponse()
+		{
+			//Arrange
+			BuildSut(response: null);
 
-            // Act
-            var result = sut.PostAsync(new FakeEmptyPostRequest { Id = 123 }).Result;
+			// Act
+			var result = sut.PostAsync(new FakeEmptyPostRequest { Id = 123 }).Result;
 
-            // Assert
-            Assert.Null(result);
-        }
+			// Assert
+			Assert.Null(result);
+		}
 
-        [Fact]
-        public void Retorna_Response()
-        {
-            //Arrange
-            BuildSut(response: new FakePostResponse());
+		[Fact]
+		public void Retorna_Response()
+		{
+			//Arrange
+			BuildSut(response: new FakePostResponse());
 
-            // Act
-            var result = sut.PostAsync(new FakePostRequest { Id = 123, Name = "any name" }).Result;
+			// Act
+			var result = sut.PostAsync(new FakePostRequest { Id = 123, Name = "any name" }).Result;
 
-            // Assert
-            Assert.IsType<FakePostResponse>(result);
-        }
+			// Assert
+			Assert.IsType<FakePostResponse>(result);
+		}
 
-        private void BuildSut(object response) 
-        {
-            var responseHandler = ResponseHandler<object>("post/123", HttpStatusCode.Created, response);
+		private void BuildSut(object response)
+		{
+			var responseHandler = ResponseHandler<object>("post/123", HttpStatusCode.Created, response);
 
-            var client = new HttpClient(responseHandler);
-            client.BaseAddress = baseUri;
+			sut = new FakeApiClient(new HttpClient(responseHandler)
+			{
+				BaseAddress = baseUri
+			});
+		}
+	}
 
-            sut = new FakeApiClient(client);
-        }
-    }
+	[Route("/post/{Id}", "POST")]
+	public class FakeEmptyPostRequest : IEmptyResponse
+	{
+		public int Id { get; set; }
+	}
 
-    [Route("/post/{Id}", "POST")]
-    public class FakeEmptyPostRequest : IEmptyResponse
-    {
-        public int Id { get; set; }
-    }
+	[Route("/post/{Id}", "POST")]
+	public class FakePostRequest : IResponse<FakePostResponse>
+	{
+		public int Id { get; set; }
+		public string Name { get; set; }
+	}
 
-    [Route("/post/{Id}", "POST")]
-    public class FakePostRequest : IResponse<FakePostResponse>
-    {
-        public int Id { get; set; }
-        public string Name { get; set; }
-    }
+	public class FakePostResponse
+	{
 
-    public class FakePostResponse
-    {
-
-    }
+	}
 }

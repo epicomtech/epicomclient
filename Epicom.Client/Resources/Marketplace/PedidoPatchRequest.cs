@@ -27,6 +27,8 @@ namespace Epicom.Client.Resources.Marketplace
 
         public string CpfCnpj { get; set; }
 
+        public String Erro { get; set; }
+
         public DateTime? DataCancelamentoPedido { get; set; }
     }
 }

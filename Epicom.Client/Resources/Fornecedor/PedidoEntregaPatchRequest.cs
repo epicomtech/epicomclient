@@ -14,6 +14,7 @@ namespace Epicom.Client.Resources.Fornecedor
         public string PrevisaoEntrega { get; set; }
         public DateTime? DataEntrega { get; set; }
 
+        public string NfSerie { get; set; }
         public string NfNumero { get; set; }
         public DateTime? NfDataEmissao { get; set; }
         public string NfChaveAcesso { get; set; }

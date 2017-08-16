@@ -88,10 +88,17 @@
     <Compile Include="Resources\Fornecedor\PedidoGetListResponse.cs" />
     <Compile Include="Resources\Fornecedor\PedidoGetRequest.cs" />
     <Compile Include="Resources\Fornecedor\ProdutoGetAllRequest.cs" />
+    <Compile Include="Resources\Fornecedor\ProdutoGetRequestQS.cs" />
+    <Compile Include="Resources\Fornecedor\ProdutoPatchRequestQS.cs" />
     <Compile Include="Resources\Fornecedor\ProdutoPatchRequest.cs" />
+    <Compile Include="Resources\Fornecedor\SkuDeleteRequestQS.cs" />
     <Compile Include="Resources\Fornecedor\SkuDeleteRequest.cs" />
+    <Compile Include="Resources\Fornecedor\SkuGetAllRequestQS.cs" />
     <Compile Include="Resources\Fornecedor\SkuGetPorProdutoRequest.cs" />
     <Compile Include="Resources\Fornecedor\SkuGetAllRequest.cs" />
+    <Compile Include="Resources\Fornecedor\SkuGetRequestQS.cs" />
+    <Compile Include="Resources\Fornecedor\SkuPatchRequestQS.cs" />
+    <Compile Include="Resources\Fornecedor\SkuPostRequestQS.cs" />
     <Compile Include="Resources\Marketplace\AtributoCategoriaPutRequest.cs" />
     <Compile Include="Resources\Marketplace\CalculoCarrinhoEntregaUnicaPostRequest.cs" />
     <Compile Include="Resources\Marketplace\CalculoCarrinhoPostRequest.cs" />

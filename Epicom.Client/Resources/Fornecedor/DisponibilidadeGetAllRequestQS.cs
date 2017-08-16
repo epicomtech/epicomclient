@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace Epicom.Client.Resources.Fornecedor
 {
-    [Route("/fornecedor/disponibilidades2?codigoProduto={CodigoProduto}&codigoSku={CodigoSku}", "GET")]
+    [Route("fornecedor/disponibilidades2?codigoProduto={CodigoProduto}&codigoSku={CodigoSku}", "GET")]
     public class DisponibilidadeGetAllRequestQS : IResponse<IEnumerable<DisponibilidadeGetResponse>>
     {
         public string CodigoProduto { get; set; }

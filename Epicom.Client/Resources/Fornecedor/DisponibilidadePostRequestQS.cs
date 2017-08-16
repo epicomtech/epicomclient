@@ -4,7 +4,7 @@ using Epicom.Http.Client.Annotations;
 
 namespace Epicom.Client.Resources.Fornecedor
 {
-    [Route("/fornecedor/disponibilidades2?codigoProduto={CodigoProduto}&codigoSku={CodigoSku}", "POST")]
+    [Route("fornecedor/disponibilidades2?codigoProduto={CodigoProduto}&codigoSku={CodigoSku}", "POST")]
     public class DisponibilidadePostRequestQS : IEmptyResponse
     {
         public string CodigoProduto { get; set; }

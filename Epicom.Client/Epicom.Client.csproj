@@ -64,10 +64,14 @@
     <Compile Include="Resources\Fornecedor\CategoriaGetResponse.cs" />
     <Compile Include="Resources\Fornecedor\CategoriaPatchRequest .cs" />
     <Compile Include="Resources\Fornecedor\CategoriaPostRequest.cs" />
+    <Compile Include="Resources\Fornecedor\DisponibilidadeGetAllRequestQS.cs" />
     <Compile Include="Resources\Fornecedor\DisponibilidadeGetAllRequest.cs" />
+    <Compile Include="Resources\Fornecedor\DisponibilidadeGetRequestQS.cs" />
     <Compile Include="Resources\Fornecedor\DisponibilidadeGetRequest.cs" />
     <Compile Include="Resources\Fornecedor\DisponibilidadeGetResponse.cs" />
+    <Compile Include="Resources\Fornecedor\DisponibilidadePatchRequestQS.cs" />
     <Compile Include="Resources\Fornecedor\DisponibilidadePatchRequest.cs" />
+    <Compile Include="Resources\Fornecedor\DisponibilidadePostRequestQS.cs" />
     <Compile Include="Resources\Fornecedor\DisponibilidadePostRequest.cs" />
     <Compile Include="Resources\Fornecedor\ImagemPatchRequest.cs" />
     <Compile Include="Resources\Fornecedor\MapeamentoSkuGetRequest.cs" />

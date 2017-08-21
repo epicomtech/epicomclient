@@ -3,7 +3,7 @@ using Epicom.Http.Client.Annotations;
 
 namespace Epicom.Client.Resources.Fornecedor
 {
-    [Route("fornecedor/disponibilidades?codigoProduto={CodigoProduto}&codigoSku={CodigoSku}&codigoMarketplace={CodigoMarketplace}&forceReprocessing={ForceNotificationPush}", "PATCH")]
+    [Route("fornecedor/disponibilidades2?codigoProduto={CodigoProduto}&codigoSku={CodigoSku}&codigoMarketplace={CodigoMarketplace}&forceReprocessing={ForceNotificationPush}", "PATCH")]
     public class DisponibilidadePatchRequestQS : IEmptyResponse
     {
         public string CodigoProduto { get; set; }

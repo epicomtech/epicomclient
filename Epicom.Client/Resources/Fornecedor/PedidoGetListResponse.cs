@@ -17,7 +17,7 @@ namespace Epicom.Client.Resources.Fornecedor
         /// <summary>
         /// Código do Pedido na Epicom
         /// </summary>
-        public string CodigoPedidoInterno { get; set; }
+        public string CodigoPedidoEpicom { get; set; }
 
         /// <summary>
         /// Código do Pedido no Marketplace

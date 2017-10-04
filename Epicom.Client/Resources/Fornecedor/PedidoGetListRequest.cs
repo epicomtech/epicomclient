@@ -6,7 +6,7 @@ using Epicom.Http.Client.Annotations;
 
 namespace Epicom.Client.Resources.Fornecedor
 {
-    [Route("fornecedor/pedidos?Criterio={Criterio}&DataInicio={DataInicio}&DataFim={DataFim}&Offset={Offset}&Limit={Limit}", "GET")]
+    [Route("fornecedor/pedidos?Status={Status}&DataInicio={DataInicio}&DataFim={DataFim}&Offset={Offset}&Limit={Limit}", "GET")]
     public class PedidoGetListRequest : PagedRequest, IResponse<IEnumerable<PedidoGetListResponse>>
     {
 		/// <summary>

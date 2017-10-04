@@ -12,7 +12,7 @@ namespace Epicom.Client.Resources.Fornecedor
 		/// <summary>
 		/// Critério de pesquisa
 		/// </summary>
-		public PedidoEpicomStatusEnum? Status { get; set; }
+		public PedidoStatusEnum? Status { get; set; }
 
 		public DateTime DataInicio { get; set; }
 

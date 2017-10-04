@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace Epicom.Client.Resources.Fornecedor
 {
-    [Route("fornecedor/pedidos/{CodigoPedido}", "GET")]
+    [Route("fornecedor/pedidos/{id}", "GET")]
     public class PedidoGetRequest : IResponse<PedidoGetResponse>
     {
-		public string CodigoPedido { get; set; }
-	}
+        public long Id { get; set; }
+    }
 }

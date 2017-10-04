@@ -14,7 +14,9 @@ namespace Epicom.Client.Resources.Fornecedor
 
         public string CodigoPedidoMarketplace { get; set; }
 
-        public DateTime DataAbertura { get; set; }
+		public string CodigoPedidoFornecedor { get; set; }
+
+		public DateTime DataAbertura { get; set; }
         
         public List<Sku> Itens { get; set; }
 

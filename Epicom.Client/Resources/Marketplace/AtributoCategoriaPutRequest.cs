@@ -13,6 +13,7 @@ namespace Epicom.Client.Resources.Marketplace
     {
         public string Codigo { get; set; }
         public string Nome { get; set; }
+        public bool AtributoValorLivre { get; set; }
         public IList<AtributoCategoriaValor> Valores { get; set; }
         
         public class AtributoCategoriaValor

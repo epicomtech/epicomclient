@@ -14,9 +14,9 @@ namespace Epicom.Client.Resources.Fornecedor
 		/// </summary>
 		public PedidoStatusEnum? Status { get; set; }
 
-		public DateTime DataInicio { get; set; }
+		public DateTime? DataInicio { get; set; }
 
-		public DateTime DataFim { get; set; }
+		public DateTime? DataFim { get; set; }
 		
     }
 }

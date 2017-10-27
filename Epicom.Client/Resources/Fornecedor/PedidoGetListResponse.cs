@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Epicom.Client.Resources.Shared;
+using System;
 
 namespace Epicom.Client.Resources.Fornecedor
 {
@@ -19,6 +20,9 @@ namespace Epicom.Client.Resources.Fornecedor
         /// Código do Pedido no Fornecedor
         /// </summary>
         public string CodigoPedidoFornecedor { get; set; }
-        
-    }
+
+
+		public PedidoStatusEnum Status { get; set; }
+
+	}
 }

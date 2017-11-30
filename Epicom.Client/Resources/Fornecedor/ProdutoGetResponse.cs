@@ -13,5 +13,6 @@ namespace Epicom.Client.Resources.Fornecedor
         public string CodigoFornecedor { get; set; }
         public string CodigoMarca { get; set; }
         public IEnumerable<GrupoGetResponse> Grupos { get; set; }
+        public bool Ativo { get; set; }
     }
 }

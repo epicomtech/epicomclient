@@ -6,7 +6,7 @@ using Epicom.Http.Client.Annotations;
 
 namespace Epicom.Client.Resources.Marketplace
 {
-    [Route("marketplace/pedidos?Criterio={Criterio}&DataInicio={DataInicio}&DataFim={DataFim}&Offset={Offset}&Limit={Limit}", "GET")]
+    [Route("marketplace/pedidos?Status={Status}&DataInicio={DataInicio}&DataFim={DataFim}&Offset={Offset}&Limit={Limit}&CodigoPedidoMarketplace={CodigoPedidoMarketplace}", "GET")]
     public class PedidoGetListRequest : PagedRequest, IResponse<IEnumerable<PedidoGetListResponse>>
     {
 		public PedidoStatusEnum? Status { get; set; }

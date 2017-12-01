@@ -11,7 +11,7 @@ namespace Epicom.Client.Resources.Marketplace
     {
 		public PedidoStatusEnum? Status { get; set; }
 
-		public string CodigoPedidoFornecedor { get; set; }
+		public string CodigoPedidoMarketplace { get; set; }
 
 		public DateTime? DataInicio { get; set; }
 

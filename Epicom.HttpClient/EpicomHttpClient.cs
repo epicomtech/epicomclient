@@ -211,7 +211,15 @@ namespace Epicom.Http.Client
                 if (property != null)
                 {
                     var propertyValue = property.GetValue(request);
-                    var propertyValueAsString = propertyValue != null ? propertyValue.ToString() : null;
+					string propertyValueAsString = "";
+					if (property.GetType() == typeof(DateTime))
+					{
+						propertyValueAsString = ((DateTime) propertyValue).ToString("yyyy-MM-ddThh:mmss");
+					}
+					else
+					{
+						propertyValueAsString = propertyValue != null ? propertyValue.ToString() : null;
+					}                    
                     path = path.Replace(parameterName, propertyValueAsString);
                 }
             }

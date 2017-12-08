@@ -91,9 +91,10 @@ namespace Epicom.Http.Client
                     var propertyValue = property.GetValue(request);
 					string propertyValueAsString = "";
 					var p = property.GetMethod.ReturnType;
-					if (property.GetMethod.ReturnType == typeof(DateTime))
+					if (property.GetMethod.ReturnType == typeof(DateTime) || property.GetMethod.ReturnType == typeof(DateTime?))
 					{
-						propertyValueAsString = ((DateTime) propertyValue).ToString("yyyy-MM-ddTHH:mm:ss");
+						DateTime? dateValue = (DateTime?)propertyValue;
+						propertyValueAsString = dateValue.HasValue ? ((DateTime) propertyValue).ToString("yyyy-MM-ddTHH:mm:ss") : null;
 					}
 					else
 					{

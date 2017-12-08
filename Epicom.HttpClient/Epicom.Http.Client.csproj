@@ -65,6 +65,7 @@
     <Compile Include="EasyAsyncEnumerable\IYielder.cs" />
     <Compile Include="EasyAsyncEnumerable\YieldableAsyncEnumerator.cs" />
     <Compile Include="EpicomHttpClient.cs" />
+    <Compile Include="RequestBuilder.cs" />
     <Compile Include="Exceptions\EpicomHttpException.cs" />
     <Compile Include="IEmptyResponse.cs" />
     <Compile Include="IEpicomHttpClient.cs" />

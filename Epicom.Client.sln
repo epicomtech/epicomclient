@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2009
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Epicom.Http.Client", "Epicom.HttpClient\Epicom.Http.Client.csproj", "{01685756-50CC-44F4-AE56-41DC2B025B76}"
 EndProject
@@ -15,8 +15,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{8D7B79
 		.nuget\NuGet.exe = .nuget\NuGet.exe
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Epicom.Client.Web.Tests", "Epicom.Client.Web.Tests\Epicom.Client.Web.Tests.csproj", "{22E74463-845E-4253-81B8-9E16162439EB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,12 +34,11 @@ Global
 		{53980E9E-AA0E-4574-B627-D4C4F28CADDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{53980E9E-AA0E-4574-B627-D4C4F28CADDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{53980E9E-AA0E-4574-B627-D4C4F28CADDD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{22E74463-845E-4253-81B8-9E16162439EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{22E74463-845E-4253-81B8-9E16162439EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{22E74463-845E-4253-81B8-9E16162439EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{22E74463-845E-4253-81B8-9E16162439EB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {41B16122-B52C-477F-8E83-84F1192B0B08}
 	EndGlobalSection
 EndGlobal

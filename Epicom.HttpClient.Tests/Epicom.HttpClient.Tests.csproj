@@ -34,16 +34,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Epicom.Client, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Epicom.Client.1.249.0\lib\net451\Epicom.Client.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="Epicom.Diagnostics, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Epicom.Diagnostics.1.58.0\lib\net451\Epicom.Diagnostics.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Epicom.Http.Client, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Epicom.Client.1.249.0\lib\net451\Epicom.Http.Client.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
@@ -89,6 +81,7 @@
     <Compile Include="HttpClientTests\BaseApiTest.cs" />
     <Compile Include="HttpClientTests\DeleteTests.cs" />
     <Compile Include="HttpClientTests\ExceptionsTests.cs" />
+    <Compile Include="HttpClientTests\RouteTests.cs" />
     <Compile Include="HttpClientTests\GetPagedTests.cs" />
     <Compile Include="HttpClientTests\GetQueryStringTest.cs" />
     <Compile Include="HttpClientTests\GetTests.cs" />
@@ -106,6 +99,16 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Epicom.Client\Epicom.Client.csproj">
+      <Project>{7b4c5ac5-6825-4ccb-9b87-c103636c39b0}</Project>
+      <Name>Epicom.Client</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Epicom.HttpClient\Epicom.Http.Client.csproj">
+      <Project>{01685756-50cc-44f4-ae56-41dc2b025b76}</Project>
+      <Name>Epicom.Http.Client</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

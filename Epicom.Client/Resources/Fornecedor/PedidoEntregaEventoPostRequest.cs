@@ -8,11 +8,11 @@ using System.Threading.Tasks;
 
 namespace Epicom.Client.Resources.Fornecedor
 {
-    [Route("fornecedor/pedidos/{CodigoPedido}/entregas/{CodigoEntrega}/eventos", "POST")]
+    [Route("fornecedor/pedidos/{IdPedido}/entregas/{IdEntrega}/eventos", "POST")]
     public class PedidoEntregaEventoPostRequest : IEmptyResponse
     {
-        public string CodigoPedido { get; set; }
-        public string CodigoEntrega { get; set; }
+        public string IdPedido { get; set; }
+        public string IdEntrega { get; set; }
 
         public string Tipo { get; set; }
         public string Descricao { get; set; }

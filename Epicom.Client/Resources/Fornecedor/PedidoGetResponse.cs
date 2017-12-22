@@ -31,19 +31,17 @@ namespace Epicom.Client.Resources.Fornecedor
 
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
         public string PrazoEntrega { get; set; }
+        public int IdMarketplace { get; set; }
 
         public class Sku
         {
-            public int Id { get; set; }
+            public string Codigo { get; set; }
             public int Quantidade { get; set; }
             public decimal Valor { get; set; }
             public decimal ValorFrete { get; set; }
             public string FormaEntrega { get; set; }
             [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
             public string PrazoEntrega { get; set; }
-            public string NomeMarketplace { get; set; }
-			public string CodigoMarketplace { get; set; }
-			public List<string> IdsItensMarketplace { get; set; }
         }
     }
 }

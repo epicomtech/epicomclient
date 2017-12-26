@@ -31,7 +31,7 @@ namespace Epicom.Client.Resources.Fornecedor
 
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
         public string PrazoEntrega { get; set; }
-        public int IdMarketplace { get; set; }
+        public string CodigoMarketplace { get; set; }
 
         public class Sku
         {

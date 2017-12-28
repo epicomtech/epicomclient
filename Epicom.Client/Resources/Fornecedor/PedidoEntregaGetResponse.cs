@@ -5,6 +5,7 @@ namespace Epicom.Client.Resources.Fornecedor
 {
     public class PedidoEntregaGetResponse
     {
+        public int Id { get; set; }
         public string Codigo { get; set; }
         public string PrevisaoEntrega { get; set; }
         public DateTime? DataEntrega { get; set; }

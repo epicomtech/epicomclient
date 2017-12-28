@@ -5,10 +5,10 @@ using System.Collections.Generic;
 
 namespace Epicom.Client.Resources.Fornecedor
 {
-    [Route("fornecedor/pedidos/{CodigoPedido}/entregas", "POST")]
+    [Route("fornecedor/pedidos/{IdPedido}/entregas", "POST")]
     public class PedidoEntregaPostRequest : IEmptyResponse
     {
-        public string CodigoPedido { get; set; }
+        public long IdPedido { get; set; }
 
         public string Codigo { get; set; }
         public string PrevisaoEntrega { get; set; }

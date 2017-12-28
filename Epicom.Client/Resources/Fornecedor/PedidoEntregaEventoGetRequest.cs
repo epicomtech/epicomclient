@@ -4,10 +4,10 @@ using System.Collections.Generic;
 
 namespace Epicom.Client.Resources.Fornecedor
 {
-    [Route("fornecedor/pedidos/{CodigoPedido}/entregas/{CodigoEntrega}/eventos", "GET")]
+    [Route("fornecedor/pedidos/{IdPedido}/entregas/{IdEntrega}/eventos", "GET")]
     public class PedidoEntregaEventoGetRequest : IResponse<IEnumerable<PedidoEntregaEventoGetResponse>>
     {
-        public string CodigoPedido { get; set; }
-        public string CodigoEntrega { get; set; }
+        public long IdPedido { get; set; }
+        public int IdEntrega { get; set; }
     }
 }

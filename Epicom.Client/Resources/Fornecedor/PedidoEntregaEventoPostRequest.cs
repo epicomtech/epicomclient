@@ -11,8 +11,8 @@ namespace Epicom.Client.Resources.Fornecedor
     [Route("fornecedor/pedidos/{IdPedido}/entregas/{IdEntrega}/eventos", "POST")]
     public class PedidoEntregaEventoPostRequest : IEmptyResponse
     {
-        public string IdPedido { get; set; }
-        public string IdEntrega { get; set; }
+        public long IdPedido { get; set; }
+        public int IdEntrega { get; set; }
 
         public string Tipo { get; set; }
         public string Descricao { get; set; }

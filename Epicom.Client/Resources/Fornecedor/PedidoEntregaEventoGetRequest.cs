@@ -8,6 +8,6 @@ namespace Epicom.Client.Resources.Fornecedor
     public class PedidoEntregaEventoGetRequest : IResponse<IEnumerable<PedidoEntregaEventoGetResponse>>
     {
         public long IdPedido { get; set; }
-        public long IdEntrega { get; set; }
+        public int IdEntrega { get; set; }
     }
 }

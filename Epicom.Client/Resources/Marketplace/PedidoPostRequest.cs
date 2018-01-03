@@ -13,6 +13,8 @@ namespace Epicom.Client.Resources.Marketplace
         public string CodigoPedido { get; set; }
         public DateTimeOffset DataPedido { get; set; }
         public decimal ValorTotal { get; set; }
+        public decimal ValorDescontol { get; set; }
+        public decimal ValorJuros { get; set; }
         public List<PedidoPostSku> Itens { get; set; }
         public PedidoDestinatario Destinatario { get; set; }
         public PedidoEndereco Endereco { get; set; }

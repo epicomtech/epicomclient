@@ -14,7 +14,11 @@ namespace Epicom.Client.Resources.Marketplace
 
 		public decimal ValorTotal { get; set; }
 
-		public List<Sku> Itens { get; set; }
+        public decimal ValorDesconto { get; set; }
+
+        public decimal ValorJuros { get; set; }
+
+        public List<Sku> Itens { get; set; }
 
 		public PedidoDestinatario Destinatario { get; set; }
 

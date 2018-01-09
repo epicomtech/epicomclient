@@ -87,6 +87,7 @@
     <Compile Include="Resources\Fornecedor\PedidoEntregaGetRequest.cs" />
     <Compile Include="Resources\Fornecedor\PedidoEntregaGetResponse.cs" />
     <Compile Include="Resources\Fornecedor\PedidoEntregaPatchRequest.cs" />
+    <Compile Include="Resources\Fornecedor\PedidoEntregaPostResponse.cs" />
     <Compile Include="Resources\Fornecedor\PedidoEntregaPostRequest.cs" />
     <Compile Include="Resources\Fornecedor\PedidoGetListRequest.cs" />
     <Compile Include="Resources\Fornecedor\PedidoGetListResponse.cs" />

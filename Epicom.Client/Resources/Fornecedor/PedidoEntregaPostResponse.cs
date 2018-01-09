@@ -7,6 +7,6 @@ namespace Epicom.Client.Resources.Fornecedor
 {    
     public class PedidoEntregaPostResponse
     {
-        public long Id { get; set; }        
+        public int Id { get; set; }        
     }
 }

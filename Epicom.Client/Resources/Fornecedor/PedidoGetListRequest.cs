@@ -13,6 +13,8 @@ namespace Epicom.Client.Resources.Fornecedor
 
 		public string CodigoPedidoFornecedor { get; set; }
 
+		public string CodigoMarketplace { get; set; }
+
 		public DateTime? DataInicio { get; set; }
 
 		public DateTime? DataFim { get; set; }

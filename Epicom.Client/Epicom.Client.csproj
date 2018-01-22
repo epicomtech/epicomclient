@@ -115,6 +115,8 @@
     <Compile Include="Resources\Marketplace\CategoriaAtributoPutRequest.cs" />
     <Compile Include="Resources\Marketplace\CategoriaGetRequest.cs" />
     <Compile Include="Resources\Marketplace\CategoriaPatchRequest.cs" />
+    <Compile Include="Resources\Marketplace\DisponibilidadeGetListRequest.cs" />
+    <Compile Include="Resources\Marketplace\DisponibilidadeGetListResponse.cs" />
     <Compile Include="Resources\Marketplace\FornecedorCategoriaGetRequest.cs" />
     <Compile Include="Resources\Marketplace\FornecedorCategoriaGetResponse.cs" />
     <Compile Include="Resources\Marketplace\GrupoGetResponse.cs" />

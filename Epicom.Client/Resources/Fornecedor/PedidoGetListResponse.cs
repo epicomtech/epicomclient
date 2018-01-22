@@ -10,7 +10,9 @@ namespace Epicom.Client.Resources.Fornecedor
 
         public string CodigoPedidoMarketplace { get; set; }
 
-        public string CodigoPedidoFornecedor { get; set; }
+		public string CodigoMarketplace { get; set; }
+
+		public string CodigoPedidoFornecedor { get; set; }
 
 		public PedidoStatusEnum Status { get; set; }
 

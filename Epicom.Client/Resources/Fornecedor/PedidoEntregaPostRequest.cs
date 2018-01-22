@@ -6,8 +6,8 @@ using System.Collections.Generic;
 namespace Epicom.Client.Resources.Fornecedor
 {
     [Route("fornecedor/pedidos/{IdPedido}/entregas", "POST")]
-    public class PedidoEntregaPostRequest : IEmptyResponse
-    {
+    public class PedidoEntregaPostRequest : IResponse<PedidoEntregaPostResponse>
+	{
         public long IdPedido { get; set; }
 
         public string Codigo { get; set; }

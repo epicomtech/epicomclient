@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Epicom.Client.Resources.Shared;
 
 namespace Epicom.Client.Resources.Marketplace
@@ -10,6 +11,7 @@ namespace Epicom.Client.Resources.Marketplace
         public string CodigoEmpresa { get; set; }
         public decimal? Preco { get; set; }
         public decimal? PrecoDe { get; set; }
+        public DateTime DataDaInclusao { get; set; }
     }
 
 }

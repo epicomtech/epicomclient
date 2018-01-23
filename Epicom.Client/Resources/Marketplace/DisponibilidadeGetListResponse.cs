@@ -5,8 +5,8 @@ namespace Epicom.Client.Resources.Marketplace
 {
 	public class DisponibilidadeGetListResponse
 	{
-        public int SkuId { get; set; }
-        public int ProdutoId { get; set; }
+        public int IdSku { get; set; }
+        public int IdProduto { get; set; }
         public string CodigoEmpresa { get; set; }
         public decimal? Preco { get; set; }
         public decimal? PrecoDe { get; set; }

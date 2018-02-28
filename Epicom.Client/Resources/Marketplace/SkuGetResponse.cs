@@ -6,6 +6,7 @@ namespace Epicom.Client.Resources.Marketplace
     public class SkuGetResponse
     {
         public int Id { get; set; }
+        public int ProdutoId { get; set; }
         public string Codigo { get; set; }
         public string Nome { get; set; }
         public string NomeReduzido { get; set; }

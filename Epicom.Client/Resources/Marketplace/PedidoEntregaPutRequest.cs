@@ -16,7 +16,8 @@ namespace Epicom.Client.Resources.Marketplace
         public string Tracking { get; set; }
         public string NomeTransportadora { get; set; }
         public string LinkRastreioEntrega { get; set; }
-        public IList<PedidoEntregaMarketplaceItem> Itens { get; set; }
+		public string LinkEtiqueta { get; set; }
+		public IList<PedidoEntregaMarketplaceItem> Itens { get; set; }
     }
 
     public class PedidoEntregaMarketplaceItem 

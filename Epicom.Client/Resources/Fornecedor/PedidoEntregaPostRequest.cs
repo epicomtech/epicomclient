@@ -26,8 +26,9 @@ namespace Epicom.Client.Resources.Fornecedor
         public DateTime? NfDataEmissao { get; set; }
         public string NfChaveAcesso { get; set; }
         public string NfLink { get; set; }
+		public string NfCFOP { get; set; }
 
-        public string NomeTransportadora { get; set; }
+		public string NomeTransportadora { get; set; }
         public string LinkRastreioEntrega { get; set; }
     }
 }

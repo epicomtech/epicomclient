@@ -24,6 +24,7 @@ namespace Epicom.Client.Resources.Fornecedor
         public string NfNumero { get; set; }
         public DateTime? NfDataEmissao { get; set; }
         public string NfChaveAcesso { get; set; }
-        public string NfLink { get; set; }
+		public string NfCFOP { get; set; }
+		public string NfLink { get; set; }
     }
 }

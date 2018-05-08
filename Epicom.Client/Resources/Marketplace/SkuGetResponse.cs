@@ -9,6 +9,7 @@ namespace Epicom.Client.Resources.Marketplace
         public int ProdutoId { get; set; }
         public string Codigo { get; set; }
         public string Nome { get; set; }
+        public string Modelo { get; set; }
         public string NomeReduzido { get; set; }
         public decimal Preco { get; set; }
         public decimal? PrecoDe { get; set; }

@@ -29,6 +29,9 @@ namespace Epicom.Client.Resources.Fornecedor
 
         public string FormaEntrega { get; set; }
 
+        public decimal? ValorComissaoMarketplace { get; set; }
+        public decimal? CustoFreteFornecedor { get; set; }
+
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
         public string PrazoEntrega { get; set; }
         public string CodigoMarketplace { get; set; }

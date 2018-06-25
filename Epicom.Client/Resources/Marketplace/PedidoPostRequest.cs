@@ -28,6 +28,8 @@ namespace Epicom.Client.Resources.Marketplace
             public int Quantidade { get; set; }
             public decimal Valor { get; set; }
             public decimal ValorFrete { get; set; }
+            public decimal? CustoFreteFornecedor { get; set; }
+            public decimal? ValorComissaoMarketplace { get; set; }
             public List<string> IdsItensMarketplace { get; set; }
             public string FormaEntrega { get; set; }
             [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]

@@ -25,6 +25,7 @@ namespace Epicom.Client.Resources.Marketplace
 
         public class Sku
         {
+            public int Id { get; set; }
             public string Codigo { get; set; }
             public List<string> IdsItensMarketplace { get; set; }
         }

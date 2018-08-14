@@ -11,7 +11,7 @@ namespace Epicom.Client.Resources.Marketplace
     [Route("marketplace/pedidos/{IdPedido}/entregas", "PUT")]
     public class PedidoEntregaPutRequest : IEmptyResponse
     {
-        public string IdPedido { get; set; }
+        public long IdPedido { get; set; }
         public string Codigo { get; set; }
         public string Tracking { get; set; }
         public string NomeTransportadora { get; set; }

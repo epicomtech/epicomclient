@@ -7,6 +7,6 @@ namespace Epicom.Client.Resources.Marketplace
     public class PedidoEntregaGetRequest : IResponse<PedidoEntregaGetResponse>
     {
         public long IdPedido { get; set; }
-        public int IdEntrega { get; set; }
+        public int Id { get; set; }
     }
 }

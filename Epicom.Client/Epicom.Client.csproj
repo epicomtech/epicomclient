@@ -127,6 +127,7 @@
     <Compile Include="Resources\Marketplace\OfertaPutRequest.cs" />
     <Compile Include="Resources\Marketplace\PedidoEntregaGetListEventosRequest.cs" />
     <Compile Include="Resources\Marketplace\PedidoEntregaEventoPostRequest.cs" />
+    <Compile Include="Resources\Marketplace\PedidoEntregaGetListRequest.cs" />
     <Compile Include="Resources\Marketplace\PedidoEntregaPutRequest.cs" />
     <Compile Include="Resources\Marketplace\PedidoGetResponse.cs" />
     <Compile Include="Resources\Marketplace\PedidoGetRequest.cs" />

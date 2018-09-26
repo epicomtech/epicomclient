@@ -8,18 +8,11 @@ using System.Threading.Tasks;
 
 namespace Epicom.Client.Resources.Marketplace
 {
-    [Route("marketplace/atributos/{codigo}/valores", "POST")]
+    [Route("marketplace/atributos/{CodigoAtributoCategoria}/valores", "POST")]
     public class AtributoCategoriaValorPostRequest : IEmptyResponse
     {
+        public string CodigoAtributoCategoria { get; set; }
         public string Codigo { get; set; }
-        public string Nome { get; set; }
-        public bool AtributoValorLivre { get; set; }
-        public IList<AtributoCategoriaValor> Valores { get; set; }
-        
-        public class AtributoCategoriaValor
-        {
-            public string Codigo { get; set; }
-            public string Nome { get; set; }
-        }
+        public string Nome { get; set; }                        
     }
 }

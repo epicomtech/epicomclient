@@ -12,6 +12,7 @@ namespace Epicom.Client.Resources.Marketplace
         public string Url { get; set; }
         public int Status { get; set; }
         public string Erro { get; set; }
+        public string Tag { get; set; }
         public IEnumerable<int> Pendencias { get; set; }
     }
 }

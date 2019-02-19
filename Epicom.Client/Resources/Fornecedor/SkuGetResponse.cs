@@ -14,8 +14,10 @@ namespace Epicom.Client.Resources.Fornecedor
         public IEnumerable<GrupoGetResponse> Grupos { get; set; }
         public bool Disponivel { get; set; }
         public int? Estoque { get; set; }
+        public int? EstoqueMinimo { get; set; }
         public string Ean { get; set; }
         public SkuDimensoesGetResponse Dimensoes { get; set; }
+        public IEnumerable<GrupoGetResponse.Atributo> Variacoes { get; set; }
     }
 
     public class SkuDimensoesGetResponse

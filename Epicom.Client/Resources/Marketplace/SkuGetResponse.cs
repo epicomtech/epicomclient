@@ -16,6 +16,7 @@ namespace Epicom.Client.Resources.Marketplace
         public IEnumerable<ImagemGetResponse> Imagens { get; set; }
         public IEnumerable<GrupoGetResponse> Grupos { get; set; }
         public DimensoesGetResponse Dimensoes { get; set; }
+        public IEnumerable<GrupoGetResponse.Atributo> Variacoes { get; set; }
         public bool Disponivel { get; set; }
         public int? Estoque { get; set; }
         public bool Ativo { get; set; }

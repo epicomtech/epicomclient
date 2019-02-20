@@ -16,5 +16,6 @@ namespace Epicom.Client.Resources.Marketplace
         public string Marca { get; set; }
         public string PalavrasChave { get; set; }
         public IEnumerable<GrupoGetResponse> Grupos { get; set; }
+        public string Genero { get; set; }
     }
 }

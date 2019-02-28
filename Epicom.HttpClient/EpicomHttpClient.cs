@@ -114,6 +114,11 @@ namespace Epicom.Http.Client
             client = ClientFactory();
             string requestContent = httpRequest.Content != null ? await httpRequest.Content.ReadAsStringAsync() : null;
             httpRequest.Headers.Add("Connection", new string[] { "Keep-Alive" });
+            var traceId = TraceId.Current;
+            if ( !string.IsNullOrEmpty(traceId))
+            {
+                httpRequest.Headers.Add(TraceIdHeader, new string[] { traceId});
+            }
 
             HttpResponseMessage response;
 
@@ -130,7 +135,7 @@ namespace Epicom.Http.Client
             {
                 string responseError = response.Content != null ? await response.Content.ReadAsStringAsync() : null;
 
-                string traceId = null;
+                traceId = null;
                 IEnumerable<string> traceIdValues = null;
                 if (response.Headers.TryGetValues(TraceIdHeader, out traceIdValues) && traceIdValues.Any())
                 {

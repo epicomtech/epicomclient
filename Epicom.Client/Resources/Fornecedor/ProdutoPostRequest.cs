@@ -16,6 +16,7 @@ namespace Epicom.Client.Resources.Fornecedor
         public string CodigoMarca { get; set; }
         public string Descricao { get; set; }
         public string PalavrasChave { get; set; }
+        public string Genero { get; set; }
 
         public IEnumerable<GrupoPostRequest> Grupos { get; set; }
     }

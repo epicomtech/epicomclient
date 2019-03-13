@@ -12,7 +12,7 @@ namespace Epicom.Client.Resources.Marketplace
     {
         public string CodigoPedido { get; set; }
         public DateTimeOffset DataPedido { get; set; }
-        public decimal ValorTotal { get; set; }
+        public decimal? ValorTotal { get; set; }
         public decimal ValorDesconto { get; set; }
         public decimal ValorJuros { get; set; }
         public List<PedidoPostSku> Itens { get; set; }
@@ -25,8 +25,8 @@ namespace Epicom.Client.Resources.Marketplace
         public class PedidoPostSku
         {
             public int Id { get; set; }
-            public int Quantidade { get; set; }
-            public decimal Valor { get; set; }
+            public int? Quantidade { get; set; }
+            public decimal? Valor { get; set; }
             public decimal ValorFrete { get; set; }
             public decimal? CustoFreteFornecedor { get; set; }
             public decimal? ValorComissaoMarketplace { get; set; }

@@ -11,6 +11,7 @@ namespace Epicom.Client.Resources.Fornecedor
         public string CodigoProduto { get; set; }
         public string Nome { get; set; }
         public string NomeReduzido { get; set; }
+        public string NomeReduzidoB2w { get; set; }
         public string Codigo { get; set; }
         public string Modelo { get; set; }
         public string Ean { get; set; }

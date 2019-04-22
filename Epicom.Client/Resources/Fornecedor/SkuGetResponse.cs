@@ -9,6 +9,7 @@ namespace Epicom.Client.Resources.Fornecedor
         public string Codigo { get; set; }
         public string Nome { get; set; }
         public string NomeReduzido { get; set; }
+        public string NomeReduzidoB2w { get; set; }
         public decimal Preco { get; set; }
         public IEnumerable<ImagemGetResponse> Imagens { get; set; }
         public IEnumerable<GrupoGetResponse> Grupos { get; set; }

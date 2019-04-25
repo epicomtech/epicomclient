@@ -106,6 +106,7 @@
     <Compile Include="Resources\Fornecedor\SkuPostRequestQS.cs" />
     <Compile Include="Resources\Marketplace\ArquivoPostRequest.cs" />
     <Compile Include="Resources\Marketplace\ArquivoPostResponse.cs" />
+    <Compile Include="Resources\Marketplace\AtributoCategoriaValorGetResponse.cs" />
     <Compile Include="Resources\Marketplace\AtributoCategoriaValorPostRequest .cs" />
     <Compile Include="Resources\Marketplace\AtributoCategoriaPostRequest .cs" />
     <Compile Include="Resources\Marketplace\AtributoCategoriaPutRequest.cs" />
@@ -165,6 +166,7 @@
     <Compile Include="Resources\Marketplace\SkuGetResponse.cs" />
     <Compile Include="Resources\Marketplace\PedidoEntregaEventoGetRequest.cs" />
     <Compile Include="Resources\Marketplace\PedidoEntregaEventoGetResponse.cs" />
+    <Compile Include="Resources\Marketplace\AtributoCategoriaValorGetRequest.cs" />
     <Compile Include="Resources\Shared\CategoriaPatchRequest.cs" />
     <Compile Include="Resources\Shared\DimensoesRequest.cs" />
     <Compile Include="Resources\Fornecedor\GrupoGetResponse.cs" />

@@ -16,6 +16,8 @@ namespace Epicom.Client.Resources.Fornecedor
         /// </summary>
         [MaxLength(60)]
         public string NomeReduzido { get; set; }
+        [MaxLength(100)]
+        public string NomeReduzidoB2w { get; set; }
         public string Nome { get; set; }
         public string Modelo { get; set; }
         public string Ean { get; set; }

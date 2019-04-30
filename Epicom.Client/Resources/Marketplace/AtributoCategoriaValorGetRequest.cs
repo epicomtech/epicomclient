@@ -4,7 +4,7 @@ using Epicom.Http.Client.Annotations;
 
 namespace Epicom.Client.Resources.Marketplace
 {
-    [Route("atributos/{codigo}/valores", "GET")]
+    [Route("atributos/{Codigo}/valores", "GET")]
     public class AtributoCategoriaValorGetRequest : IResponse<IEnumerable<AtributoCategoriaValorGetResponse>>
     {
         public string Codigo { get; set; }

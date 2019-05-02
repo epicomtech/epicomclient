@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Epicom.Client.Resources.Marketplace
 {
-    [Route("marketplace/atributos", "PATCH")]
+    [Route("marketplace/atributos/{Codigo}", "PATCH")]
     public class AtributoCategoriaPatchRequest : IEmptyResponse
     {
         public string Codigo { get; set; }

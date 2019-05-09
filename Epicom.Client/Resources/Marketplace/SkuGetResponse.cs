@@ -11,6 +11,7 @@ namespace Epicom.Client.Resources.Marketplace
         public string Nome { get; set; }
         public string Modelo { get; set; }
         public string NomeReduzido { get; set; }
+        public string NomeReduzidoB2w { get; set; }
         public decimal Preco { get; set; }
         public decimal? PrecoDe { get; set; }
         public IEnumerable<ImagemGetResponse> Imagens { get; set; }

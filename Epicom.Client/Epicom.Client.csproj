@@ -168,6 +168,8 @@
     <Compile Include="Resources\Marketplace\PedidoEntregaEventoGetRequest.cs" />
     <Compile Include="Resources\Marketplace\PedidoEntregaEventoGetResponse.cs" />
     <Compile Include="Resources\Marketplace\AtributoCategoriaValorGetRequest.cs" />
+    <Compile Include="Resources\Shared\CategoriaGetAllRequest.cs" />
+    <Compile Include="Resources\Shared\CategoriaGetResponse.cs" />
     <Compile Include="Resources\Shared\CategoriaPatchRequest.cs" />
     <Compile Include="Resources\Shared\DimensoesRequest.cs" />
     <Compile Include="Resources\Fornecedor\GrupoGetResponse.cs" />

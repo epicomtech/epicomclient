@@ -26,6 +26,7 @@ namespace Epicom.Client.Resources.Fornecedor
         public DimensoesRequest Dimensoes { get; set; }
         public IEnumerable<ImagemPostRequest> Imagens { get; set; }
         public IEnumerable<GrupoPostRequest> Grupos { get; set; }
+        public IEnumerable<GrupoPostRequest.Atributo> Variacoes { get; set; }
 
     }
 }

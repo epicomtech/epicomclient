@@ -36,6 +36,7 @@ namespace Epicom.Client.Resources.Fornecedor
         public DimensoesRequest Dimensoes { get; set; }
         public IEnumerable<ImagemPatchRequest> Imagens { get; set; }
         public IEnumerable<GrupoPostRequest> Grupos { get; set; }
+        public IEnumerable<GrupoPostRequest.Atributo> Variacoes { get; set; }
         /// <summary>
         /// Força o reenvio de notificações para SKUs que não foram alterados
         /// </summary>
